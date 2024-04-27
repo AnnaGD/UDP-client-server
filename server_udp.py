@@ -31,7 +31,7 @@ def handle_client(data, client_address, sock, db_file):
                     break
     elif command == "display_score":
         score = int(args[0])
-        reponse = ""
+        response = ""
         with open(db_file, "r") as f:
             for line in f:
                 if int(line.split(',')[3]) > score:
