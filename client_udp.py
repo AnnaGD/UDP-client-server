@@ -24,8 +24,8 @@ def send_command(sock, server_address, command):
         print(f"An error occurred: {e}")
 
 def main():
-    server_host = 'eros.cs.txstate.edu'  # Server hostname or IP address
-    server_port = 12000  # Server port number
+    server_host = 'localhost'  # Server hostname or IP address update to eros.cs.txstate.edu
+    server_port = 13000  # Server port number
 
     # Create a UDP socket
     with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as client_socket:
